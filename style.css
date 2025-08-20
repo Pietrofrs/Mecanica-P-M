@@ -34,7 +34,7 @@ header {
 .principal {
 padding: 3em 0;
     background:var(--cor-marrom-claro);
-    width: 1290px;
+    width: 1500px;
     margin: 0 auto;
 }
 
@@ -117,7 +117,7 @@ nav a:hover {
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
-    border: 2px solid #000000;
+    border: 2px solid var(--cor-verdeescuro);
     border-radius: 10px;
 }
 
@@ -139,10 +139,8 @@ nav a:hover {
 }
 
 .imagem-produtos {
-    width: 300px;
-}
-.produto-descricao {
-    font-size: 18px;
+    width: 180px; 
+    font-weight: bold;
 }
 
 .produto-preco {
