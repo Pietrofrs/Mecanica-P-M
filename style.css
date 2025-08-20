@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background: #979191;
+    background:var(--cor-marrom-claro);
     padding: 10px 0;
 }
 
@@ -228,7 +228,7 @@ nav a:hover {
 
 footer {
     text-align: center;
-    background: #313030;
+    background:var(--cor-marrom-claro);
     padding: 0 0;
 }
 
@@ -245,8 +245,8 @@ footer {
 .enviar {
     width: 40%;
     padding: 15px 0;
-    background: var(--cor-principal);
-    color: var(--cor-branco);
+    background: var(--cor-escuro);
+    color: var(--cor-verdeescuro);
     font-weight: bold;
     font-size: 18px;
     border: none;
@@ -256,28 +256,28 @@ footer {
 }
 
 .enviar:hover {
-    background: darkorange;
+    background: var(--cor-principal);
     transform: scale(1.2);
 }
 
 table {
-    margin: 20px 0 40px;
+    margin: 20px 350 40px;
 }
 
 thead {
-    background: #555555;
+    background:var(--cor-escuro);
     color: white;
     font-weight: bold;
 }
 
 td, th {
-    border: 1px solid #000000;
-    padding: 8px 15px;
+    border: 1px solid var(--cor-branco);
+    padding: 10px 30px;
 }
 
 .mapa {
     padding: 3em 0;
-    background-color: linear-gradient(#FEFEFE, #888888);
+    background-color: linear-gradient(#009d51, #b8a99a);
 }
 
 .mapa p {
