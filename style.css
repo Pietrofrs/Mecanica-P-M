@@ -1,3 +1,15 @@
+:root {
+    /* cores personalisadas */
+    --cor-principal: #FFA100;
+    --cor-escuro: #514538;
+    --cor-secundaria: #00d683;
+    --cor-marrom-claro: #b8a99a;
+    --cor-verdeescuro: #009d51;
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+}
+
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -12,16 +24,16 @@ header {
 }
 
 .titulo-principal {
-    text-align: center;
+   text-align: center;
     font-size: 2em;
-    margin: 0 0 2em;
+    margin: 20 50 2em;
     clear: left;
-    width: 180px;
+    width: 190px;
 }
 
 .principal {
-    padding: 3em 0;
-    background: #FFA100;
+padding: 3em 0;
+    background:var(--cor-marrom-claro);
     width: 1290px;
     margin: 0 auto;
 }
@@ -45,18 +57,31 @@ header {
 }
 
 .imagembeneficios {
-    width: 60%;
+    width: 65%;
 }
 
 .caixa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
-    width: 1000px;
+    width: 940px;
     margin: 0 auto;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.header-logo {
+    width: 90px;
+    margin-right: 10px;
+}
+
 nav {
-    position: absolute;
-    top: 120px;
+    top: 110px;
     right: 0;
 }
 
@@ -67,14 +92,14 @@ nav li {
 
 nav a {
     text-transform: uppercase;
-    color: #000000;
+    color: var(--cor-preto);
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #FFA100;
+    color: var(--cor-principal);
     text-decoration: underline;
 }
 
@@ -97,11 +122,11 @@ nav a:hover {
 }
 
 .produtos li:hover {
-    border-color: #FFA100;
+    border-color: var(--cor-principal);
 }
 
 .produtos li:active {
-    border-color: #088C19;
+    border-color: var(--cor-verdeescuro);
 }
 
 .produtos h2 {
@@ -113,6 +138,9 @@ nav a:hover {
     font-size: 34px;
 }
 
+.imagem-produtos {
+    width: 300px;
+}
 .produto-descricao {
     font-size: 18px;
 }
@@ -123,22 +151,22 @@ nav a:hover {
     margin-top: 10px;
 }
 
-main {
-    
-}
-
 .beneficios {
     padding: 3em 0;
-    background: #979191;
+    background: var(--cor-secundaria);
 }
 
 .conteudo-beneficios {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     width: 640px;
     margin: 0 auto;
 }
 
 .lista-beneficios {
-    width: 100%;
+    list-style: none;
+    width: 40%;
     display: inline-block;
     vertical-align: top;
 }
@@ -152,43 +180,46 @@ main {
 }
 
 .itens:before {
-    content: "✔️";
+    content: "✓";
 }
 
 .imagem-beneficios {
-    width: 80%;
+    width: 60%;
     opacity: 1;
     transition: 400ms;
-    box-shadow: 10px 10px 10px 0 #000000;
+    box-shadow: 10px 10px 10px 0 var(--cor-preto);
 }
 
 .imagem-beneficios:hover {
     opacity: 0.3;
 }
 
-form {
-    margin: 40px 0;
+.form-center {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    width: 100%;
 }
 
-form label,
-form legend {
+.form-center label,
+.form-center legend {
     display: block;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0 0 10px;
 }
 
-form input {
-    display: block;
+.form-center input {
+    display: inline-block;
     margin: 0 0 20px;
     padding: 10px 25px;
-    width: 50%;
+    width: auto;
 }
 
-.input-padrao {
-    display: block;
+.form-center .input-padrao {
+    display: inline-block;
     margin: 0 0 20px;
     padding: 10px 25px;
-    width: 50%;
+    width: 100%;
 }
 
 .checkbox {
@@ -197,21 +228,25 @@ form input {
 
 footer {
     text-align: center;
-    background: url("img/bg.jpg");
-    padding: 40px 0;
+    background: #313030;
+    padding: 0 0;
+}
+
+.logofooter {
+    width: 100%;
 }
 
 .copyright {
-    color: #FFFFFF;
+    color: var(--cor-branco);
     font-size: 13px;
-    margin: 20px 0 0;
+    margin: 10px 0 0;
 }
 
 .enviar {
     width: 40%;
     padding: 15px 0;
-    background: orange;
-    color: white;
+    background: var(--cor-principal);
+    color: var(--cor-branco);
     font-weight: bold;
     font-size: 18px;
     border: none;
@@ -306,4 +341,3 @@ img ~ p {
     }
 
 }
-
